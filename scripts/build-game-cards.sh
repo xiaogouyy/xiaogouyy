@@ -20,10 +20,10 @@ RECENT=(
 
 ALL_TIME=(
   "elden-ring|ELDEN RING|FromSoftware"
-  "baldurs-gate-3|Baldur's Gate 3|Larian Studios"
-  "genshin-impact|Genshin Impact|HoYoverse"
   "sekiro|Sekiro: Shadows Die Twice|FromSoftware"
+  "baldurs-gate-3|Baldur's Gate 3|Larian Studios"
   "silent-hill-2|Silent Hill 2|Bloober Team"
+  "genshin-impact|Genshin Impact|HoYoverse"
 )
 
 YEARLY=(

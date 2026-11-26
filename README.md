@@ -40,10 +40,10 @@ hello! here's a little about me:
       <sub>Python · scikit-learn · XGBoost · LightGBM</sub>
     </td>
     <td width="33%" valign="top">
-      <h3><a href="https://github.com/xiaogouyy/insy669_group_assignments">Retail Review Text Analytics</a></h3>
-      What are shoppers actually saying? Mined TeePublic customer reviews (US vs Canada): word frequencies by sentiment, association rules by star rating, VADER sentiment vs. ratings, and LDA topics with a KNN classifier.
+      <h3><a href="https://github.com/Hasan8036/sitescore">SiteScore</a></h3>
+      Can a restaurant founder see closure risk coming before signing a lease? I did the modelling: a logistic regression on 52,268 Yelp restaurants, scoring risk from location, competition and concept. On a held-out city it reaches <b>AUC 0.687</b>.
       <br><br>
-      <sub>Python · NLP · VADER · LDA</sub>
+      <sub>Python · statsmodels · logistic regression · Streamlit</sub>
     </td>
     <td width="33%" valign="top">
       <h3><a href="https://github.com/xiaogouyy/Undergraduate_Thesis">Brand Responses &amp; Customer Sentiment</a></h3>
