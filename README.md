@@ -18,7 +18,7 @@ hello! here's a little about me:
 </p>
 
 <p align="center">
-  <i>add me on steam (yes, there are two of me) · inspired by <a href="https://github.com/andyruwruw">andyruwruw</a></i>
+  <i>add me on steam (yes, there are two of me)</i>
 </p>
 
 <p></p>
@@ -26,6 +26,10 @@ hello! here's a little about me:
 <h1>
   i'm aiming for retail analytics :shopping_cart:
 </h1>
+
+<p align="center">
+  <i>here's what i've built</i>
+</p>
 
 <table>
   <tr>
@@ -49,10 +53,6 @@ hello! here's a little about me:
     </td>
   </tr>
 </table>
-
-<p align="center">
-  <i> here's what i've built</i>
-</p>
 
 <p></p>
 
@@ -83,4 +83,10 @@ hello! here's a little about me:
   </picture>&nbsp;&nbsp;
   <img src="assets/tools/vscode.svg" width="48" height="48" alt="VS Code" title="VS Code">&nbsp;&nbsp;
   <img src="assets/tools/figma.svg" width="48" height="48" alt="Figma" title="Figma">
+</p>
+
+<p></p>
+
+<p align="center">
+  <i>inspired by <a href="https://github.com/andyruwruw">andyruwruw</a></i>
 </p>
