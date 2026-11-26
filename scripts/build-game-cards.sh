@@ -39,7 +39,7 @@ CURRENT=(
   "dota-2|Dota 2|Valve"
   "overwatch|Overwatch|Blizzard"
   "super-mario-party|Super Mario Party|Nintendo"
-  "splatoon-3|Splatoon 3|Nintendo"
+  "cyberpunk-2077|Cyberpunk 2077|CD PROJEKT RED"
 )
 
 FONT="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji"
