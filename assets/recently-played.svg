@@ -1,0 +1,64 @@
+<svg width="640" height="130" viewBox="0 0 640 130" fill="none" xmlns="http://www.w3.org/2000/svg"><foreignObject width="640" height="130"><div xmlns="http://www.w3.org/1999/xhtml"><style>
+* { margin: 0; box-sizing: border-box; }
+p { display: block; opacity: 0; }
+.title {
+  color: rgba(115, 115, 115, .8);
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 18px; font-weight: 600; line-height: 1.5;
+  text-align: center;
+  animation: appear 300ms ease-out forwards;
+}
+.game {
+  display: flex; align-items: center;
+  background: rgba(255, 255, 255, .6);
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: .3rem;
+  padding: .7rem;
+}
+.game .details {
+  display: flex; flex: 1; flex-direction: column;
+  margin-top: -4px; margin-left: 10px;
+}
+.name, .studio {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 14px; line-height: 1.5;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  animation: appear 300ms ease-out forwards;
+}
+.name { color: #1f2328; font-weight: 600; animation-delay: 400ms; }
+.studio { color: #59636e; font-weight: 400; animation-delay: 500ms; }
+.icon {
+  width: 40px; height: 40px; border-radius: 4px; flex-shrink: 0;
+  opacity: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 3px 10px rgba(0,0,0,0.05);
+  animation: icon-appear 300ms ease-out 300ms forwards;
+}
+@media (prefers-color-scheme: dark) {
+  .game { background: rgba(255, 255, 255, .05); border-color: rgba(255, 255, 255, .15); }
+  .name { color: #f0f6fc; }
+  .studio { color: #9198a1; }
+}
+@keyframes appear {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes icon-appear {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.title { margin: .5rem; }
+.recent { display: flex; justify-content: center; align-items: center; }
+.recent .game { margin: 0 .4rem; }
+.recent .name, .recent .studio { width: 140px; }
+.bars { display: flex; flex-direction: column; justify-content: center; width: 80px; }
+.bars.left { align-items: flex-end; }
+.bars.right { align-items: flex-start; }
+.bar {
+  --offset: 0;
+  background: rgba(102, 192, 244, .7);
+  height: 10px; margin: 2px 0; width: 50px;
+  animation: bars 1.7s ease calc(var(--offset) * -.5s) infinite;
+}
+@keyframes bars { 0% { width: 25%; } 50% { width: 90%; } 100% { width: 25%; } }
+</style><p class="title">recently played</p><div class="recent"><div class="bars left"><div class="bar" style="--offset:0"></div><div class="bar" style="--offset:1"></div><div class="bar" style="--offset:2"></div></div><div class="game"><img class="icon" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQIAJQAlAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAgACADAREAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAABgUIAgMEB//EACwQAAEDAwIEBQQDAAAAAAAAAAECAwQFBhEABxIhMUEIEyJRYXGBkbEUUoL/xAAaAQADAAMBAAAAAAAAAAAAAAAEBQYBAgcD/8QAMBEAAQIFAQYEBQUAAAAAAAAAAQIEAAMFESFhBhIxQVHwE3GBkSKhscHRFCNC4fH/2gAMAwEAAhEDEQA/AKNWLtnZ9RsCBWq44Yjj5UhTzsrykcQWoADPLOB01OOXjlLhUqUL20jpFMo1Mm05Dp2d0m+Sqw4kQwpWwdpNuF1TD81DqfQlx8lAH9gU4/Z0AuqOLWuBbSH0jZimg71ioHXHni0Y1TZqw6S6t6oBqE04OFDb8wtpSc9QSoE/TJGsy6i7mCyM+l41nbP0iQSqdZIPAFVh9YO7k7O27QbIqFUp0d5uVHShSFecVJIKwDyOexOimdQnTZ6Zazg6QqrGz7JqxmOJIO8LWzqBCzaKmQbs2ig06c03JikOMutk9Dxkg/B5g5699Av1rkPFLQbHB+UO6DKlPqOmROAKcgj1Psf9gZOqVz+H+sNwnuOsWo6smP5vIpGeaQrHpWPboeuPY9CG9VQVD4Zg498xE6uc+2XnCWr9yQeH4vyI6cDxh5Kpdn79UHzYzwTOaTydACZMY+y0905z8dcHPPStMx1SpllDB9j5RTLk03aeRvIPxDn/ACT5jmPl0Mat6YzlvbRyIcZovMoQxFWvIHAgFI4vykD/AFremkTngWo5yY12hBa0cykC4G6nyGM/K3rEdt3d7Vm+HlNaXFSHorzrLKV8hJcU4eE/bJB+EHXo6kFxUvCBwQCdBbv3gCk1BNP2f/UKTlJIGpJx3pD23Kpbu91jutONpkMLARIjOEebGX2we2OoV3/I0rnIn01xcGx5Hke+cUbVwy2gYlKhcHiOaT3wP9iK03xZdf2Su5p6M+80yolyDPa9IdR3SfkdCk/o6sWrmRUpJBF+o6d8jHJagwd7PuwpCiBxSocx0/I+0eq1a4p24Ph1q9YrEZtqQhQCFs5Sl0IcQAvHbnkY6ZT9tJJcpDSpJlSjj6XBi2nO5tU2cmuHIsR052Iz739o5Nst6bIou1cG2LjZkTCgOofY/ihxshTqlDnnsFD5z9tZe0x3NeKcSCBwtnSA6TXqZIpiGTwFXG4tcZJPXWFdj7u7RW+pxiksihBQ9bzkRQKx7FY4lH6HQLmn1SaLzDvev2wIcU+t0BsSluPD1KePrkxLXVvftZcNOVCq0tiqx21BQZVDcWOIZwU5T1wTz0M3pdRkr35Q3SdR+YMeV+huZfhz1BYHLdJzpiA+5O8lizNt51r26taUuxkpYQ1FU202Q4FcJ4sHPInOCPnTVnTnaXQcT+uc54Qhqlepa6ati0vkYsCAM3tnvWP/2Q=="/><div class="details"><p class="name">Dota 2</p><p class="studio">Valve</p></div></div><div class="game"><img class="icon" src="data:image/jpeg;base64,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"/><div class="details"><p class="name">Genshin Impact</p><p class="studio">HoYoverse</p></div></div><div class="bars right"><div class="bar" style="--offset:0"></div><div class="bar" style="--offset:1"></div><div class="bar" style="--offset:2"></div></div></div></div></foreignObject></svg>
